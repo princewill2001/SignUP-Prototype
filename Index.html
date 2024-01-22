@@ -9,32 +9,25 @@
     <!-- ****** LINK TO OUR CSS FILE ******-->
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- ****** LINK TO OUR FONT AWESOME FILE ******-->
+    <!-- ****** LINK TO FONT AWESOME FILE ******-->
     <script src="https://kit.fontawesome.com/29a75f51aa.js" crossorigin="anonymous"></script>
 
-    <!-- ****** LINK TO OUR FAVICON *****-->
-    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <!-- ****** LINK TO FAVICON *****-->
+    <link rel="icon" type="image/x-icon" href="Assets/images/icon.png">
 </head>
 
 <body>
-    <header>
-        <div class="header__info">
-            <h1>WELCOME TO RUN TECH SPACE</h1>
-            <p>A Community For Tech Enthusiasts</p>
-        </div>
-        <nav>
-            <div class="nav__container">
-                <ul class="nav__menu">
-                    <li><a href="https://runtechspace.com">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="https://runtechspace.vercel.app/">Exam Simulator</a></li>
-                </ul>
-            </div>
+    <header class="header container__header">
+        <a href="Index.html" class="logo"><i class="fa-solid fa-laptop"></i>RUN TECH SPACE</a>
+        <nav class="container__nav">
+            <a href="Index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="https://runtechspace.vercel.app/">Exam Simulator</a>
         </nav>
     </header>
     <!--***************** END OF NAVBAR ************-->
+
     <div class="hero">
         <h1>Join Our Community</h1>
         <div class="signup-box"> <!--This is the container for the sign up form-->
@@ -43,12 +36,16 @@
                 <form action="/my-handling-form-page" method="post">
                     <label for="user">Full Name: </label>
                     <input type="text" required class="input-box">
+
                     <label for="dob">Date Of Birth(Date & Month): </label>
                     <input type="text" required class="input-box">
+
                     <label for="num">Phone Number: </label>
                     <input type="text" placeholder="(Whatsapp Line)" required class="input-box">
+
                     <label for="email">Email Address: </label>
                     <input type="email" required class="input-box">
+
                     <label for="stacks">Stack Of Interest: </label>
                     <input list="stackOptions" required class="input-box">
                     <datalist id="stackOptions">
